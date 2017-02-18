@@ -1,4 +1,4 @@
-package com.mycompany.hibernate.cookbook.saveobject;
+package com.mycompany.hibernate.cookbook.examples;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
