@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <hibernate-mapping>
+        <class name="Employee" table="employee">
+            <id name="id" type="long" column="id">
+                <generator class="increment" />
+            </id>
+            <property column="firstname" name="firstName" />
+            <property column="lastname" name="lastName" />
+            <property column="salary" name="salary" />
+            <many-to-one name="department" class="Department">
+                <column name="department" />
+            </many-to-one>
+        </class>
+    </hibernate-mapping>
+</hibernate-configuration>
