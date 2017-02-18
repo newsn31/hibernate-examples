@@ -28,7 +28,7 @@ public class SaveObject {
         
         //creating a department object
         Department department = new Department();
-        department.setDeptName("development");
+        department.setDeptName("Optics");
         
         //save department object
         session.save(department);
@@ -36,8 +36,8 @@ public class SaveObject {
         
         //create an employee object
         Employee employee = new Employee();
-        employee.setFirstName("Yoshi");
-        employee.setLastName("Mario");
+        employee.setFirstName("Scott");
+        employee.setLastName("Summers");
         employee.setSalary(50000);
         employee.setDepartment(department);
         
