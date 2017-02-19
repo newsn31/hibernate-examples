@@ -82,4 +82,12 @@ public class Employee {
         this.department = department;
     }
     
+    
+    public void printEmployee() {
+        System.out.println("\nEmployee:");
+        System.out.println(this.getFirstName());
+        System.out.println(this.getLastName());
+        System.out.println(this.getSalary());
+        System.out.println(this.getDepartment());
+    }
 }

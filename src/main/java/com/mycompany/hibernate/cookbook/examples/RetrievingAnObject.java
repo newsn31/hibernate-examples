@@ -21,11 +21,8 @@ public class RetrievingAnObject {
         Session session = sessionFactory.openSession();
 
         Employee employee = (Employee) session.get(Employee.class, new Long(4));
-        System.out.println("\nEmployee:");
-        System.out.println(employee.getFirstName());
-        System.out.println(employee.getLastName());
-        System.out.println(employee.getSalary());
-        System.out.println(employee.getDepartment());
+        
+        employee.printEmployee();
 
         session.close();
         HibernateUtil.shutdown();
