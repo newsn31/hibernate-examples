@@ -88,6 +88,6 @@ public class Employee {
         System.out.println(this.getFirstName());
         System.out.println(this.getLastName());
         System.out.println(this.getSalary());
-        System.out.println(this.getDepartment());
+        System.out.println(this.getDepartment().getDeptName());
     }
 }
